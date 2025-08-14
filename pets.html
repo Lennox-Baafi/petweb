@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Available Pets - PetBuy Centre</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <header>
+        <div class="header-container">
+            <div class="logo">
+                <a href="index.html">
+                    <div class="logo-icon">
+                        <i class="fas fa-paw"></i>
+                    </div>
+                    <div class="logo-text">PetBuy Centre</div>
+                </a>
+            </div>
+            
+            <nav>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="pets.html" class="active">Pets</a></li>
+                    <li><a href="about.html">About</a></li>
+                </ul>
+            </nav>
+            
+            <div class="user-actions">
+        <button class="btn btn-logout" onclick="logout()">Logout</button>
+         <a href="login.html" class="btn btn-login">Login</a>
+        <a href="register.html" class="btn btn-register">Register</a>
+</div>
+        </div>
+    </header>
+    
+        <h2 class="section-title">Available Pets</h2>
+            
+          <div class="pets-container">
+            <!-- Pet cards will be loaded here -->
+           <div class="pet-card">
+                <img src="https://images.unsplash.com/photo-1543852786-1cf6624b9987?ixlib=rb-4.0.3&auto=format&fit=crop&w=500&q=80" alt="Siamese Cat" class="pet-image">
+                <div class="pet-info">
+                    <h3 class="pet-name">Luna</h3>
+                    <p class="pet-breed">Siamese Cat</p>
+                    <div class="pet-details">
+                        <span><i class="fas fa-venus"></i> Female</span>
+                        <span><i class="fas fa-birthday-cake"></i> 8 months</span>
+                    </div>
+                    <div class="pet-health">Vaccinated • Dewormed • Health Checked</div>
+                    <p>Gentle, affectionate, and loves to cuddle. Gets along well with other pets.</p>
+                    <a href="adopt.html" class="btn btn-buy">Adopt Now</a>
+                </div>
+            </div>
+
+            <div class="pet-card">
+                <img src="https://images.unsplash.com/photo-1551290464-66719418ca54?ixlib=rb-4.0.3&auto=format&fit=crop&w=500&q=80" alt="Husky" class="pet-image">
+                <div class="pet-info">
+                    <h3 class="pet-name">Rocky</h3>
+                    <p class="pet-breed">Siberian Husky</p>
+                    <div class="pet-details">
+                        <span><i class="fas fa-mars"></i> Male</span>
+                        <span><i class="fas fa-birthday-cake"></i> 2 years</span>
+                    </div>
+                    <div class="pet-health">Vaccinated • Neutered • Health Certificate</div>
+                    <p>Energetic and intelligent. Needs an active family who enjoys outdoor activities.</p>
+                    <a href="adopt.html" class="btn btn-buy">Adopt Now</a>
+                </div>
+            </div>
+            
+            <div class="pet-card">
+                <img src="https://images.unsplash.com/photo-1517423568366-8b83523034fd?ixlib=rb-4.0.3&auto=format&fit=crop&w=500&q=80" alt="Golden Retriever" class="pet-image">
+                <div class="pet-info">
+                    <h3 class="pet-name">Max</h3>
+                    <p class="pet-breed">Golden Retriever</p>
+                    <div class="pet-details">
+                        <span><i class="fas fa-venus-mars"></i> Male</span>
+                        <span><i class="fas fa-birthday-cake"></i> 1.5 years</span>
+                    </div>
+                    <div class="pet-health">Vaccinated • Neutered • Microchipped</div>
+                    <p>Friendly, playful, and great with kids. Loves long walks and playing fetch.</p>
+                    <a href="adopt.html" class="btn btn-buy">Adopt Now</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Pet Info Modal -->
+<div class="modal" id="pet-modal">
+    <div class="modal-content">
+        <span class="close-modal">&times;</span>
+        <div class="modal-pet-info">
+            <img id="modal-pet-image" src="" alt="Pet image" class="modal-pet-image">
+            <div class="modal-pet-details">
+                <h2 id="modal-pet-name"></h2>
+                <p class="pet-breed" id="modal-pet-breed"></p>
+                <div class="pet-details">
+                    <span id="modal-pet-gender"></span>
+                    <span id="modal-pet-age"></span>
+                </div>
+                <div class="pet-health" id="modal-pet-health"></div>
+                <p id="modal-pet-description"></p>
+                <div class="modal-actions">
+                    <button class="btn btn-close">Close</button>
+                    <a href="adopt.html" class="btn btn-primary" id="proceed-to-adopt">Proceed to Adoption</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+    <footer>
+      <div class="copyright">
+            <p>&copy; 2025 PetBuy Centre. All rights reserved.</p>
+        </div>
+    </footer>
+    
+    <script src="script.js"></script>
+</body>
+</html>

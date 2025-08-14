@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PetBuy Centre - Find Your Perfect Companion</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <header>
+        <div class="header-container">
+            <div class="logo">
+                <a href="index.html">
+                    <div class="logo-icon">
+                        <i class="fas fa-paw"></i>
+                    </div>
+                    <div class="logo-text">PetBuy Centre</div>
+                </a>
+            </div>
+            
+            <nav>
+                <ul>
+                    <li><a href="index.html" class="active">Home</a></li>
+                    <li><a href="pets.html">Pets</a></li>
+                    <li><a href="about.html">About</a></li>
+                </ul>
+            </nav>
+            
+           <div class="user-actions">
+        <span class="welcome">Welcome, <%= currentUser.name %></span>
+        <button class="btn btn-logout" onclick="logout()">Logout</button>
+        <a href="login.html" class="btn btn-login">Login</a>
+        <a href="register.html" class="btn btn-register">Register</a>
+   
+</div>
+        </div>
+    </header>
+    
+    <div class="container">
+        <section class="hero">
+            <h1>Find Your Perfect Furry Friend</h1>
+            <p>Adopt a loving companion today from our wide selection of healthy and happy pets.</p>
+            <a href="pets.html" class="btn btn-primary">Browse Pets</a>
+        </section>
+        
+        <section class="features">
+            <div class="feature-card">
+                <div class="feature-icon">
+                    <i class="fas fa-heart"></i>
+                </div>
+                <h3>Loving Companions</h3>
+                <p>Find pets that will bring joy and love to your home.</p>
+            </div>
+            
+            <div class="feature-card">
+                <div class="feature-icon">
+                    <i class="fas fa-shield-alt"></i>
+                </div>
+                <h3>Health Guarantee</h3>
+                <p>All pets come with health checks and vaccinations.</p>
+            </div>
+            
+            <div class="feature-card">
+                <div class="feature-icon">
+                    <i class="fas fa-graduation-cap"></i>
+                </div>
+                <h3>Training Support</h3>
+                <p>Get professional training for your new pet.</p>
+            </div>
+        </section>
+    </div>
+    
+    <footer id="contact">
+        <div class="footer-container">
+            <div class="footer-links">
+                <div class="footer-logo">
+                    <i class="fas fa-paw"></i>
+                    PetBuy Centre
+                </div>
+                <p>Connecting loving families with healthy pets since 2008.</p>
+            </div>
+            
+            <div class="footer-links">
+                <h3>Quick Links</h3>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="pets.html">Available Pets</a></li>
+                    <li><a href="about.html">About Us</a></li>
+                    <li><a href="adopt.html">Adoption Process</a></li>
+                </ul>
+            </div>
+            
+            <div class="footer-links">
+                <h3>Contact Us</h3>
+                <ul>
+                    <li><i class="fas fa-map-marker-alt"></i> Okponglo, Legon-Accra</li>
+                    <li><i class="fas fa-phone"></i> +233 20 781 5205</li>
+                    <li><i class="fas fa-envelope"></i> info@petbuycentre.com</li>
+                </ul>
+            </div>
+        </div>
+        
+        <div class="copyright">
+            <p>&copy; 2025 PetBuy Centre. All rights reserved.</p>
+        </div>
+    </footer>
+    
+    <script src="script.js"></script>
+</body>
+</html>
